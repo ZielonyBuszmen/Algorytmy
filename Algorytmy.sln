@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1", "ConsoleApp1\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListaPosortowana", "ListaPosortowana\ListaPosortowana.csproj", "{3F3731ED-22C1-4786-992F-3A35CEB797D8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListaJednokierunkowa", "ListaJednokierunkowa\ListaJednokierunkowa.csproj", "{7E109AAA-37E5-4379-A624-CE139ED25606}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{3F3731ED-22C1-4786-992F-3A35CEB797D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3F3731ED-22C1-4786-992F-3A35CEB797D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3F3731ED-22C1-4786-992F-3A35CEB797D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E109AAA-37E5-4379-A624-CE139ED25606}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E109AAA-37E5-4379-A624-CE139ED25606}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E109AAA-37E5-4379-A624-CE139ED25606}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E109AAA-37E5-4379-A624-CE139ED25606}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
