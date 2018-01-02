@@ -1,15 +1,15 @@
 # Algorytmy
-
+Materiały na drugi kolos z Algorytmów i Danych Struktur 
 
 
 ## Lab 8
-- [Stos (LIFO)](StosLIFO)
-    - [Sprawdzenie poprawności nawiasów w wyrażeniu za pomocą stosu](Stos-SprawdzeniePoprawnosciNawiasow)
-- [Kolejka (FIFO)](KolejkaFIFO)
-    - [Kolejka (zbudowana za pomocą dwóch stosów)](KolejkaNaDwaStosy)
-- [Lista jednokierunkowa](ListaJednokierunkowa)
-    - [Lista posortowana (jednokierunkowa)](ListaPosortowana)
-- [Lista dwukierunkowa](ListaDwukierunkowa)
+- [Stos (LIFO)](StosLIFO/Program.cs)
+    - [Sprawdzenie poprawności nawiasów w wyrażeniu za pomocą stosu](Stos-SprawdzeniePoprawnosciNawiasow/Program.cs)
+- [Kolejka (FIFO)](KolejkaFIFO/Program.cs)
+    - [Kolejka (zbudowana za pomocą dwóch stosów)](KolejkaNaDwaStosy/Program.cs)
+- [Lista jednokierunkowa](ListaJednokierunkowa/Program.cs)
+    - [Lista posortowana (jednokierunkowa)](ListaPosortowana/Program.cs)
+- [Lista dwukierunkowa](ListaDwukierunkowa/Program.cs)
 
 
 ## Lab 9
