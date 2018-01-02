@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{8FC6347B-1553-4C50-99C6-15CA23915040}</ProjectGuid>
+    <ProjectGuid>{1A0CBE2A-31B1-4FE5-AE8F-7C91EB6E5CEC}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>ConsoleApp1</RootNamespace>
-    <AssemblyName>ConsoleApp1</AssemblyName>
+    <RootNamespace>Stos_SprawdzeniePoprawnosciNawiasow</RootNamespace>
+    <AssemblyName>Stos-SprawdzeniePoprawnosciNawiasow</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
