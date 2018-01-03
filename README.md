@@ -14,7 +14,7 @@ Materiały na drugi kolos z Algorytmów i Danych Struktur
 
 ## Lab 9
 - [Drzewo](Drzewo/Program.cs)
-    - [Drzewo potomków Adama]()
+    - [Drzewo potomków Adama](DrzewoPotomkowAdama/Program.cs)
 - [Drzewo binarne](DrzewoBinarne/Program.cs)
 - [Drzewo Trie]()
 - [Drzewo Huffmana]()
