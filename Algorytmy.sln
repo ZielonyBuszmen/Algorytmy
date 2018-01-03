@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListaDwukierunkowa", "Lista
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drzewo", "Drzewo\Drzewo.csproj", "{09B2F403-A444-49A1-91F1-7A68A7EC688F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DrzewoBinarne", "DrzewoBinarne\DrzewoBinarne.csproj", "{45813625-2F01-46C1-9B5C-C67045904E06}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +59,10 @@ Global
 		{09B2F403-A444-49A1-91F1-7A68A7EC688F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{09B2F403-A444-49A1-91F1-7A68A7EC688F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{09B2F403-A444-49A1-91F1-7A68A7EC688F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45813625-2F01-46C1-9B5C-C67045904E06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45813625-2F01-46C1-9B5C-C67045904E06}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45813625-2F01-46C1-9B5C-C67045904E06}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45813625-2F01-46C1-9B5C-C67045904E06}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

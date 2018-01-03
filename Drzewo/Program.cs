@@ -27,7 +27,7 @@ namespace Drzewo
             this.children.Add(child);
         }
 
-        // PRE-ORDER - 
+        // PRE-ORDER
         public void ShowPreOrder()
         {
             // najpierw rodzic
@@ -75,7 +75,6 @@ namespace Drzewo
     {
         public Node root;
     }
-
 
     class Program
     {

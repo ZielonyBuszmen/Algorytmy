@@ -13,7 +13,11 @@ Materiały na drugi kolos z Algorytmów i Danych Struktur
 
 
 ## Lab 9
-- [ opis jakis ](link)
+- [Drzewo](Drzewo/Program.cs)
+    - [Drzewo potomków Adama]()
+- [Drzewo binarne](DrzewoBinarne/Program.cs)
+- [Drzewo Trie]()
+- [Drzewo Huffmana]()
 
 
 ## Lab 10
@@ -39,9 +43,13 @@ Materiały na drugi kolos z Algorytmów i Danych Struktur
 ## Przechodzenie przez drzewo
 - **PRE-ORDER** - najpierw odwiedzamy poprzednik, a następnie jego następniki w kolejności od lewej do prawej.
 
-![foto pre-order](images/pre-order.png)
+![foto pre-order](./images/pre-order.png)
 
-- **POST-ORDER** - najpierw odwiedzamy następniki węzła, a 
-dopiero potem sam węzeł
+- **POST-ORDER** - najpierw odwiedzamy następniki węzła, a dopiero potem sam węzeł
 
-![foto post-order](images/post-order.png)
+![foto post-order](./images/post-order.png)
+
+- **IN-ORDER** (tylko w drzewie binarnym) -
+    - przejdź lewe pod-drzeweo,
+    - odwiedź korzeń,
+    - przejdź prawe pod-drzewo
