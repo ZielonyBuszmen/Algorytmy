@@ -32,3 +32,16 @@ Materiały na drugi kolos z Algorytmów i Danych Struktur
 - [ opis jakis ](link)
 
 
+
+
+# Opisy
+
+## Przechodzenie przez drzewo
+- **PRE-ORDER** - najpierw odwiedzamy poprzednik, a następnie jego następniki w kolejności od lewej do prawej.
+
+![foto pre-order](images/pre-order.png)
+
+- **POST-ORDER** - najpierw odwiedzamy następniki węzła, a 
+dopiero potem sam węzeł
+
+![foto post-order](images/post-order.png)

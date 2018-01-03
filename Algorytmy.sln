@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26403.7
+VisualStudioVersion = 15.0.27130.2003
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListaPosortowana", "ListaPosortowana\ListaPosortowana.csproj", "{3F3731ED-22C1-4786-992F-3A35CEB797D8}"
 EndProject
@@ -16,6 +16,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stos-SprawdzeniePoprawnosciNawiasow", "Stos-SprawdzeniePoprawnosciNawiasow\Stos-SprawdzeniePoprawnosciNawiasow.csproj", "{1A0CBE2A-31B1-4FE5-AE8F-7C91EB6E5CEC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListaDwukierunkowa", "ListaDwukierunkowa\ListaDwukierunkowa.csproj", "{C7BB2D07-4A70-4782-83DB-E86B1144E52A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drzewo", "Drzewo\Drzewo.csproj", "{09B2F403-A444-49A1-91F1-7A68A7EC688F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,8 +53,15 @@ Global
 		{C7BB2D07-4A70-4782-83DB-E86B1144E52A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C7BB2D07-4A70-4782-83DB-E86B1144E52A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C7BB2D07-4A70-4782-83DB-E86B1144E52A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09B2F403-A444-49A1-91F1-7A68A7EC688F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09B2F403-A444-49A1-91F1-7A68A7EC688F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09B2F403-A444-49A1-91F1-7A68A7EC688F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09B2F403-A444-49A1-91F1-7A68A7EC688F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E1069829-FFC4-4362-9462-7857295629DE}
 	EndGlobalSection
 EndGlobal
