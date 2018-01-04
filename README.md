@@ -22,8 +22,8 @@ Materiały na drugi kolos z Algorytmów i Danych Struktur
 
 ## Lab 10
 - [Kopiec binarny](KopiecBinarny/Program.cs) - implementacja tablicowa (budowanie kopca, liczenie wysokości, ilości liści, itp)
+- [Sortowanie przez kopcowanie](SortowaniePrzezKopcowanie/Program.cs)
 - *Do dokończenia* [Kopiec binarny - implementacja jako drzewo binarne](KopiecBinarnyJakoDrzewo/Program.cs)
-- *Do dokończenia* [Sortowanie przez kopcowanie](SortowaniePrzezKopcowanie/Program.cs)
 
 ## Lab 11
 - [ opis jakis ](link)
@@ -40,6 +40,18 @@ Materiały na drugi kolos z Algorytmów i Danych Struktur
 
 
 # Opisy
+
+## Drzewo
+- **Stopień węzła w drzewie** - to liczba jego następników (liczba dzieci)
+- **Liść** - węzeł bez następników (bez dzieci)
+- **Węzeł wewnętrzny** - to węzeł, który nie jest liściem (czyli ma następników / dzieci)
+- **Poziom węzła** - długość ścieżko od korzenia do tego węzła
+- **Wysokość drzewa** - to największy poziom węzła w tym drzewie
+
+## Rodzaje drzew binarnych
+ - **Regularne drzewo binarne** to takie drzewo binarne, którego węzły mają stopień parzysty (czyli dwa lub zero).
+ - **Zupełne drzewo binarne** to drzewo binarne, w którym wszystkie poziomy są wypełnione całkowicie, z wyjątkiem co najwyżej ostatniego - spójnie wypełnionego od lewej strony
+ - **Pełne drzewo binarne** - to regularne drzewo binarne, w którym wszystkie liście mają ten sam poziom
 
 ## Przechodzenie przez drzewo
 - **PRE-ORDER** - najpierw odwiedzamy poprzednik, a następnie jego następniki w kolejności od lewej do prawej.
@@ -60,8 +72,10 @@ Materiały na drugi kolos z Algorytmów i Danych Struktur
 
 ## Drzewo Huffmana [>>Zobacz opis<<](./DrzewoHuffmana/README.md)
 
+
 ## Kopiec binarny
 Kopiec binarny (binary heap - stóg, sterta) to zupełne drzewo binarne, spełniające warunek kopca: dla każdego węzła X wartość następnika nie jest większa niż wartość X
+
 - **Warunek istnienia kopca** - dla każdego węzła X, wartość następnika jest nie większa niż wartość X. Jeśli X ma indeks `i` to następniki mają indeksy `2*i+1` oraz `2*i+2`
 - **Liczba węzłów** - Na 0-wym poziomie jest jeden węzeł, czyli `2^0`. 
     - Na 1-szym poomie są 2 węzły, bo `2^1`. 
@@ -78,3 +92,6 @@ Kopiec binarny (binary heap - stóg, sterta) to zupełne drzewo binarne, spełni
 - Gdzie w kopcu można znaleźć element najmniejszy? -> **W liściach**
 -  Czy tablica, która jest odwrotnie posortowana (tzn. nierosnąco), jest kopcem? -> **Tak**
 
+
+## Sortowanie przez kopcowanie
+![foto sortowanie przez kopcowanie](./images/sortowanie-przez-kopcowanie.png)
