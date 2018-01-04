@@ -16,8 +16,9 @@ Materiały na drugi kolos z Algorytmów i Danych Struktur
 - [Drzewo](Drzewo/Program.cs)
     - [Drzewo potomków Adama](DrzewoPotomkowAdama/Program.cs)
 - [Drzewo binarne](DrzewoBinarne/Program.cs)
-- [Drzewo Trie]()
+- [Drzewo Trie](DrzewoTrie/Program.cs)
 - [Drzewo Huffmana]()
+
 
 
 ## Lab 10
@@ -53,3 +54,6 @@ Materiały na drugi kolos z Algorytmów i Danych Struktur
     - przejdź lewe pod-drzeweo,
     - odwiedź korzeń,
     - przejdź prawe pod-drzewo
+
+## Drzewo Trie
+![foto drzewo trie](./images/drzewo-trie.png)
