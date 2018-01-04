@@ -17,8 +17,7 @@ Materiały na drugi kolos z Algorytmów i Danych Struktur
     - [Drzewo potomków Adama](DrzewoPotomkowAdama/Program.cs)
 - [Drzewo binarne](DrzewoBinarne/Program.cs)
 - [Drzewo Trie](DrzewoTrie/Program.cs)
-- [Drzewo Huffmana]()
-
+- *Do dokończenia* [Drzewo Huffmana](DrzewoHuffmana/Program.cs) - [>>ZOBACZ OPIS<<](DrzewoHuffmana/README.md) - rodzaj drzewa binarnego, gdzie znakom które występują najczęściej powinniśmy przyporządkować kody najkrótsze,  które występują najrzadziej kody dłuższe.
 
 
 ## Lab 10
@@ -57,3 +56,5 @@ Materiały na drugi kolos z Algorytmów i Danych Struktur
 
 ## Drzewo Trie
 ![foto drzewo trie](./images/drzewo-trie.png)
+
+## Drzewo Huffmana [>>Zobacz opis<<](./DrzewoHuffmana/README.md)
