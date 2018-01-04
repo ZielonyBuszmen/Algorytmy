@@ -21,8 +21,9 @@ Materiały na drugi kolos z Algorytmów i Danych Struktur
 
 
 ## Lab 10
-- [ opis jakis ](link)
-
+- [Kopiec binarny](KopiecBinarny/Program.cs) - implementacja tablicowa (budowanie kopca, liczenie wysokości, ilości liści, itp)
+- *Do dokończenia* [Kopiec binarny - implementacja jako drzewo binarne](KopiecBinarnyJakoDrzewo/Program.cs)
+- *Do dokończenia* [Sortowanie przez kopcowanie](SortowaniePrzezKopcowanie/Program.cs)
 
 ## Lab 11
 - [ opis jakis ](link)
@@ -58,3 +59,22 @@ Materiały na drugi kolos z Algorytmów i Danych Struktur
 ![foto drzewo trie](./images/drzewo-trie.png)
 
 ## Drzewo Huffmana [>>Zobacz opis<<](./DrzewoHuffmana/README.md)
+
+## Kopiec binarny
+Kopiec binarny (binary heap - stóg, sterta) to zupełne drzewo binarne, spełniające warunek kopca: dla każdego węzła X wartość następnika nie jest większa niż wartość X
+- **Warunek istnienia kopca** - dla każdego węzła X, wartość następnika jest nie większa niż wartość X. Jeśli X ma indeks `i` to następniki mają indeksy `2*i+1` oraz `2*i+2`
+- **Liczba węzłów** - Na 0-wym poziomie jest jeden węzeł, czyli `2^0`. 
+    - Na 1-szym poomie są 2 węzły, bo `2^1`. 
+    - ... 
+    - Na `(h-1)` poziomie jest `2^(h-1)` węzłów. 
+    - Na ostatnim poziomie jest od 1 do `2^h` węzłów
+- **Najmniejsza liczba węzłów** 1+2+4+...+ 2^(h-1) +1 = 2^h
+- **Największa liczba węzłów**  1+2+4+...+ 2^(h-1) +2^h = 2^(h+1) -1
+- **Ilość liści i ilość węzłów wewnętrznych:**
+    - Liczba liści jest nie mniejsza niż liczba węzłów wewnętrznych
+    - Ale jednocześnie węzłów wewnętrzych nie może być mniej niż liści o więcej niż 1
+    - Czyli albo liści jest tyle co wewnętrznych gdy n parzyste
+    - Albo liczba liści jest o 1 większa gdy n - nieparyste
+- Gdzie w kopcu można znaleźć element najmniejszy? -> **W liściach**
+-  Czy tablica, która jest odwrotnie posortowana (tzn. nierosnąco), jest kopcem? -> **Tak**
+
