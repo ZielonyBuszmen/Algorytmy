@@ -2,7 +2,7 @@
 Materiały na drugi kolos z Algorytmów i Danych Struktur 
 
 
-## Lab 8
+## Lab 8 - Lista, Stos, Kolejka
 - [Stos (LIFO)](StosLIFO/Program.cs)
     - [Sprawdzenie poprawności nawiasów w wyrażeniu za pomocą stosu](Stos-SprawdzeniePoprawnosciNawiasow/Program.cs)
 - [Kolejka (FIFO)](KolejkaFIFO/Program.cs)
@@ -12,31 +12,31 @@ Materiały na drugi kolos z Algorytmów i Danych Struktur
 - [Lista dwukierunkowa](ListaDwukierunkowa/Program.cs)
 
 
-## Lab 9
+## Lab 9 - Drzewa, Drzewa binarne
 - [Drzewo](Drzewo/Program.cs)
     - [Drzewo potomków Adama](DrzewoPotomkowAdama/Program.cs)
 - [Drzewo binarne](DrzewoBinarne/Program.cs)
 - [Drzewo Trie](DrzewoTrie/Program.cs)
-- *Do dokończenia* [Drzewo Huffmana](DrzewoHuffmana/Program.cs) - [>>ZOBACZ OPIS<<](DrzewoHuffmana/README.md) - rodzaj drzewa binarnego, gdzie znakom które występują najczęściej powinniśmy przyporządkować kody najkrótsze,  które występują najrzadziej kody dłuższe.
+- *Do dokończenia* [Drzewo Huffmana](DrzewoHuffmana/Program.cs) - [>>ZOBACZ OPIS<<](DrzewoHuffmana/README.md) - rodzaj drzewa binarnego, gdzie znakom które występują najczęściej powinniśmy przyporządkować kody najkrótsze, które występują najrzadziej kody dłuższe.
 
 
-## Lab 10
+## Lab 10 - Kopiec binarny
 - [Kopiec binarny](KopiecBinarny/Program.cs) - implementacja tablicowa (budowanie kopca, liczenie wysokości, ilości liści, itp)
 - [Sortowanie przez kopcowanie](SortowaniePrzezKopcowanie/Program.cs) - implementacja tablicowa
 - [Kopiec binarny - implementacja jako drzewo binarne](KopiecBinarnyJakoDrzewo/Program.cs)
 - [Kolejka Priorytetowa](KolejkaPriorytetowa/Program.cs)
 
+
 ## Lab 11 - Drzewa BST
-- [ opis jakis ](link)
+- [ to do ](#)
 
 
-## Lab 12
-- [ opis jakis ](link)
+## Lab 12 - Zbiory (?)
+- [ to do ](#)
 
 
-## Lab 13
-- [ opis jakis ](link)
-
+## Lab 13 - Grafy (?)
+- [ to do ](#)
 
 
 
@@ -96,3 +96,4 @@ Kopiec binarny (binary heap - stóg, sterta) to zupełne drzewo binarne, spełni
 
 ## Sortowanie przez kopcowanie
 ![foto sortowanie przez kopcowanie](./images/sortowanie-przez-kopcowanie.png)
+
