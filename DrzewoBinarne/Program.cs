@@ -32,7 +32,7 @@ namespace DrzewoBinarne
         // PRE-ORDER
         public void ShowPreOrder()
         {
-            Console.Write("{0} ", this.value);
+            Console.Write("({0}", this.value);
             if (this.left != null)
             {
                 this.left.ShowPreOrder();
@@ -41,6 +41,7 @@ namespace DrzewoBinarne
             {
                 this.right.ShowPreOrder();
             }
+            Console.Write(")");
         }
 
         // PRE-ORDER bez użycia rekurencji (wsk. wykorzystaj stos)
