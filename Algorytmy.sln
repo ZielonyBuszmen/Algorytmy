@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27130.2003
+VisualStudioVersion = 15.0.27130.2010
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListaPosortowana", "ListaPosortowana\ListaPosortowana.csproj", "{3F3731ED-22C1-4786-992F-3A35CEB797D8}"
 EndProject
@@ -32,6 +32,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SortowaniePrzezKopcowanie", "SortowaniePrzezKopcowanie\SortowaniePrzezKopcowanie.csproj", "{4C496005-DD55-4D15-8D9A-C1CCBE4DF044}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KopiecBinarnyJakoDrzewo", "KopiecBinarnyJakoDrzewo\KopiecBinarnyJakoDrzewo.csproj", "{7028E9CC-282B-4CE4-86AB-EA99B55A93D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KolejkaPriorytetowa", "KolejkaPriorytetowa\KolejkaPriorytetowa.csproj", "{67EBAB2B-1679-458F-9B7C-BA9992E076E5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -99,6 +101,10 @@ Global
 		{7028E9CC-282B-4CE4-86AB-EA99B55A93D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7028E9CC-282B-4CE4-86AB-EA99B55A93D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7028E9CC-282B-4CE4-86AB-EA99B55A93D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67EBAB2B-1679-458F-9B7C-BA9992E076E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67EBAB2B-1679-458F-9B7C-BA9992E076E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67EBAB2B-1679-458F-9B7C-BA9992E076E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67EBAB2B-1679-458F-9B7C-BA9992E076E5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -24,6 +24,7 @@ Materiały na drugi kolos z Algorytmów i Danych Struktur
 - [Kopiec binarny](KopiecBinarny/Program.cs) - implementacja tablicowa (budowanie kopca, liczenie wysokości, ilości liści, itp)
 - [Sortowanie przez kopcowanie](SortowaniePrzezKopcowanie/Program.cs) - implementacja tablicowa
 - [Kopiec binarny - implementacja jako drzewo binarne](KopiecBinarnyJakoDrzewo/Program.cs)
+- [Kolejka Priorytetowa](KolejkaPriorytetowa/Program.cs)
 
 ## Lab 11 - Drzewa BST
 - [ opis jakis ](link)
