@@ -20,8 +20,7 @@ namespace StosLIFO
     class Stos
     {
         int counter = 0;
-        Node top;
-
+        Node top; // wierzchołek stosu
 
         // wrzucenie wartości na stos
         public void Push(int value)
@@ -58,7 +57,6 @@ namespace StosLIFO
         {
             return this.counter == 0;
         }
-
     }
 
     class Program

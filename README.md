@@ -97,3 +97,50 @@ Kopiec binarny (binary heap - stóg, sterta) to zupełne drzewo binarne, spełni
 ## Sortowanie przez kopcowanie
 ![foto sortowanie przez kopcowanie](./images/sortowanie-przez-kopcowanie.png)
 
+
+# Słowniczek
+- Node - węzeł
+- root - korzeń
+- leaf - liść
+- value - wartość
+- children - dzieci
+- parent - rodzic
+- head - głowa
+- rear - tył (ogon)
+- Tree - drzewo
+- Stack - stos
+- Queue - kolejka
+- Init - zainicjować (nadać wartość początkową)
+- Show - pokaż (wyśiwetl)
+- Get - weź (pobierz)
+- Height - wysokość
+- Length - długość (wielkość)
+- left / right - lewe / prawe (dziecko, poddrzewo, węzeł)
+- prev / next - poprzedni / następny
+- Search - szukaj
+- Insert - wstaw
+- word - wyraz, słowo
+- Empty - pusty
+
+# Lista metod w strukturach danych
+- Stos (Stack)
+    - `Push()` - wrzuca element na wierzchołek stosu
+    - `Pop()` - zwraca element z wierzchołka i go usuwa
+    - `Peek()` - zwraca element z wierzchołka bez jego usuwania
+    - `Empty()` - zwraca true, jeśli stos jest pusty
+- Kolejka (Queue)
+    - `Enqueue()` - dodaje element na koniec kolejki (Add, Insert)
+    - `Dequeue()` - usuwa element z początku kolejki (Remove)
+    - `Peek()` - zwraca (bez usuwania) element z początku kolejki
+- Lista (List)
+    - #
+- Drzewo (Tree)
+    - #
+- Kopiec (Heap)
+    - `Heapify()`
+    - `Build()`
+    - `Insert()` - wstawia element do kopca
+    - `ExtractMax()` - zwraca i usuwa największy element z kopca. Następnie na to miejsca wrzuca element najmniejszy
+    - `Maximum()` - zwraca (bez usuwania) największy element kopca
+    - `HeapSort()` - sortowanie przez kopcowanie
+    
