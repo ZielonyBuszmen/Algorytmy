@@ -1,5 +1,6 @@
 # Algorytmy
-Materiały na drugi kolos z Algorytmów i Danych Struktur 
+Materiały na drugi kolos z Algorytmów i Danych Struktur.
+**Wyświetlanie Pre-order z nawiasami** najlepszą metodą na ogarnięcie struktury!
 
 
 ## Lab 8 - Lista, Stos, Kolejka
@@ -28,15 +29,15 @@ Materiały na drugi kolos z Algorytmów i Danych Struktur
 
 
 ## Lab 11 - Drzewa BST
-- [ to do ](#)
+- *Do dokończenia*  [Drzewo BST](DrzewoBST/Program.cs)
 
 
 ## Lab 12 - Zbiory (?)
-- [ to do ](#)
+- [to do](#)
 
 
 ## Lab 13 - Grafy (?)
-- [ to do ](#)
+- [to do](#)
 
 
 
