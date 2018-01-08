@@ -9,9 +9,9 @@ namespace DrzewoBST
     /**
      * DrzewoBST
      */
-    /*
-     * 
-     * 
+    /* Lista metod:
+     *  -  - 
+     *  -  - 
      */
 
     class DrzewoBST<T> where T : IComparable<T>
@@ -165,7 +165,6 @@ namespace DrzewoBST
             return weight;
         }
 
-
         // Wstawianie reukrencyjne
         public void Insert(T value)
         {
@@ -205,17 +204,207 @@ namespace DrzewoBST
             }
         }
 
+        // wstawianie iteracyjne
+        public void InsertIteratively(T value)
+        {
+            if (this.root == null)
+            {
+                this.root = new Node(value);
+            }
+            else
+            {
+                Node temp = this.root;
+                while (true)
+                {
+                    if (value.CompareTo(temp.value) < 0)
+                    {
+                        if (temp.left == null)
+                        {
+                            temp.left = new Node(value);
+                            return;
+                        }
+                        else
+                        {
+                            temp = temp.left;
+                        }
+                    }
+                    else
+                    {
+                        if (temp.right == null)
+                        {
+                            temp.right = new Node(value);
+                            return;
+                        }
+                        else
+                        {
+                            temp = temp.right;
+                        }
+                    }
+                }
+            }
+        }
+
+        // Szuka elementu w drzewie z największym kluczem (tj. największy element) (zad 5A lab 11)
+        // todo - przetestować
+        public T GetMaxElement()
+        {
+            return this.GetMaxElement(this.root).value;
+        }
+        private Node GetMaxElement(Node node)
+        {
+            Node temp = node;
+            while (temp.right != null)
+            {
+                temp = node.right;
+            }
+            return temp;
+        }
+
+        // Szuka elementu w drzewie z najmniejszym kluczem (tj. najmniejszy element) (zad 5B lab 11)
+        // todo - przetestować
+        public T GetMinElement()
+        {
+            return this.GetMinElement(this.root).value;
+        }
+        private Node GetMinElement(Node node)
+        {
+            Node temp = node;
+            while (temp.left != null)
+            {
+                temp = node.left;
+            }
+            return temp;
+        }
 
 
-        // Należy napisać metody Poprzednik i Następnik dla drzewa BST 
-        //   (w sensie takim jak przy przechodzeniu drzewa w porządku in-order) (Pr dom 11)
+        // szuka rekurencyjnie węzła o podanej wartości
+        // todo - sprawdzic, czy dziala
+        public bool Search(T value)
+        {
+            return this.Search(this.root, value) != null;
+        }
+        private Node Search(Node root, T value)
+        {
+            if (root == null) return null;
+            if (root.value.CompareTo(value) == 0) return root;
+            if (root.value.CompareTo(value) < 0)
+            {
+                return this.Search(root.right, value);
+            }
+            else
+            {
+                return this.Search(root.left, value);
+            }
+        }
 
+
+        // Szuka iteracyjnie węzła o podanej wartości (zad 5C lab 11)
+        // todo - przetestować
+        public bool SearchIteratively(T value)
+        {
+            if (root == null) return false;
+            Node temp = this.root;
+            while (true)
+            {
+                if (temp.value.CompareTo(value) == 0) return true;
+                if (temp.value.CompareTo(value) < 0)
+                {
+                    if (temp.right == null) return false;
+                    temp = temp.right;
+                }
+                else
+                {
+                    if (temp.left == null) return false;
+                    temp = temp.left;
+                }
+            }
+        }
+
+
+        //}
+
+
+        /*
+
+Zadanie 6
+Napisz w C# metodę obrotu węzła w prawo i w lewo.
+
+Zadanie 7
+Napisz w C# metodę wstawiania węzła do korzenia przy wykorzystaniu obrotów.
+
+
+Napisz metodę do usuwanie węzła z drzewa - (jest na wykladzie)
+
+ */
+
+
+        // szuka następnika w drzewie - jeśli nie znajdzie zwraca podane value
+        public T FindSuccerssor(T value)
+        {
+            Node node = this.Search(this.root, value);
+            if (node.right != null)
+            {
+                return this.GetMinElement(node.right).value;
+            }
+            Node parent = this.FindParent(value);
+            while (parent != null && parent.left != null && parent.left.value.CompareTo(node.value) != 0)
+            {
+                node = parent;
+                parent = this.FindParent(parent.value);
+            }
+
+            if (parent == null) return value;
+            else return parent.value;
+        }
+
+        // Szuka poprzednika  w drzewie - jeśli nie znajdzie zwraca podane value
+        public T FindPredecessor(T value)
+        {
+            Node node = this.Search(this.root, value);
+            if (node.left != null)
+            {
+                return this.GetMaxElement(node.left).value;
+            }
+            Node parent = this.FindParent(value);
+            while (parent != null && parent.right != node)
+            {
+                node = parent;
+                parent = this.FindParent(value);
+            }
+
+            if (parent == null) return value;
+            else return parent.value;
+        }
+
+        // metoda pomocnicza do poprzednika i następnika - znajduje rodzica danego węzła
+        private Node FindParent(T childrenValue)
+        {
+            return FindParent(this.root, childrenValue);
+        }
+        private Node FindParent(Node node, T childrenValue) // metoda reukurencyjna, pomocnicza do FindParent(T childrenValue)
+        {
+            if (node.value.CompareTo(childrenValue) == 0) return null; // zabezpieczenie przed "nieznalezieniem dziecka"
+            if (node.left == null && node.right == null)
+                return null;
+
+            if ((node.left != null && node.left.value.CompareTo(childrenValue) == 0)
+                || (node.right != null && node.right.value.CompareTo(childrenValue) == 0))
+                return node;
+
+            if (node.value.CompareTo(childrenValue) < 0)
+            {
+                return this.FindParent(node.right, childrenValue);
+            }
+            else
+            {
+                return this.FindParent(node.left, childrenValue);
+            }
+        }
     }
-
 
     class Program
     {
-        static DrzewoBST<T> CreateTreeFromArray<T>(T[] array) where T : IComparable<T>
+        public static DrzewoBST<T> CreateTreeFromArray<T>(T[] array) where T : IComparable<T>
         {
             DrzewoBST<T> tree = new DrzewoBST<T>();
             foreach (T item in array)
@@ -238,17 +427,6 @@ namespace DrzewoBST
 
             int[] array2 = new int[] { 10, 16, 12, 7, 9, 2, 21, 6, 17, 1, 15 };
             DrzewoBST<int> drzewo2 = CreateTreeFromArray(array2);
-
-
-
-            Console.WriteLine("Wypisanie pre order z wcięciem");
-            drzewo2.ShowPreOrder();
-            Console.WriteLine();
-
-            Console.WriteLine("Wypisanie in order z wcięciem");
-            drzewo0.ShowInOrderWithIndent();
-            Console.WriteLine();
-
 
             Console.ReadKey();
         }

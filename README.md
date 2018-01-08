@@ -98,6 +98,12 @@ Kopiec binarny (binary heap - stóg, sterta) to zupełne drzewo binarne, spełni
 ## Sortowanie przez kopcowanie
 ![foto sortowanie przez kopcowanie](./images/sortowanie-przez-kopcowanie.png)
 
+## Drzewo BST
+- TODO - dodać jakiś opis
+- Wykaż, że czas przechodzenia drzewa w porządku in-order jest liniowy - wystarczy do metody wyświetlającej in-order dodać licznik kroków(tzn. ilość wywołania tej funkcji). Później wysarczy to zliczyć, by zobaczyć, że liczba wywołań funkcji jest taka sama jak ilość węzłów.
+
+
+
 
 # Słowniczek
 - Node - węzeł
