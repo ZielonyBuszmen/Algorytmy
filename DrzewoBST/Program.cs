@@ -10,7 +10,7 @@ namespace DrzewoBST
      * DrzewoBST
      */
     /* Lista metod:
-     *  -  - 
+     *  - Show() - 
      *  -  - 
      */
 
@@ -125,7 +125,7 @@ namespace DrzewoBST
             }
         }
 
-        // wysokość drzewa
+        // Wysokość drzewa
         public int Height()
         {
             return Height(this.root);
@@ -165,7 +165,7 @@ namespace DrzewoBST
             return weight;
         }
 
-        // Wstawianie reukrencyjne
+        // Wstawianie rekurencyjne
         public void Insert(T value)
         {
             Node node = new Node(value);
@@ -244,8 +244,7 @@ namespace DrzewoBST
             }
         }
 
-        // Szuka elementu w drzewie z największym kluczem (tj. największy element) (zad 5A lab 11)
-        // todo - przetestować
+        // Zwraca największy element (zad 5A lab 11)
         public T GetMaxElement()
         {
             return this.GetMaxElement(this.root).value;
@@ -255,13 +254,12 @@ namespace DrzewoBST
             Node temp = node;
             while (temp.right != null)
             {
-                temp = node.right;
+                temp = temp.right;
             }
             return temp;
         }
 
-        // Szuka elementu w drzewie z najmniejszym kluczem (tj. najmniejszy element) (zad 5B lab 11)
-        // todo - przetestować
+        // Zwraca najmniejszy element (zad 5B lab 11)
         public T GetMinElement()
         {
             return this.GetMinElement(this.root).value;
@@ -271,14 +269,12 @@ namespace DrzewoBST
             Node temp = node;
             while (temp.left != null)
             {
-                temp = node.left;
+                temp = temp.left;
             }
             return temp;
         }
 
-
-        // szuka rekurencyjnie węzła o podanej wartości
-        // todo - sprawdzic, czy dziala
+        // Szuka węzła o podanej wartości - REKURENCYJNIE
         public bool Search(T value)
         {
             return this.Search(this.root, value) != null;
@@ -297,9 +293,7 @@ namespace DrzewoBST
             }
         }
 
-
-        // Szuka iteracyjnie węzła o podanej wartości (zad 5C lab 11)
-        // todo - przetestować
+        // Szuka węzła o podanej wartości - ITERACYJNIE (zad 5C lab 11)
         public bool SearchIteratively(T value)
         {
             if (root == null) return false;
@@ -319,9 +313,6 @@ namespace DrzewoBST
                 }
             }
         }
-
-
-        //}
 
 
         /*
