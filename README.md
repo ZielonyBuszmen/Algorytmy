@@ -64,10 +64,11 @@ Materiały na drugi kolos z Algorytmów i Danych Struktur.
 
 ![foto post-order](./images/post-order.png)
 
-- **IN-ORDER** (tylko w drzewie binarnym) -
+- **IN-ORDER** (tylko w drzewie binarnym) - 
     - przejdź lewe pod-drzeweo,
     - odwiedź korzeń,
     - przejdź prawe pod-drzewo
+In order w drzewie BST wyświetla elementy tak, jak by były posortowane
 
 ## Drzewo Trie
 ![foto drzewo trie](./images/drzewo-trie.png)
@@ -99,8 +100,12 @@ Kopiec binarny (binary heap - stóg, sterta) to zupełne drzewo binarne, spełni
 ![foto sortowanie przez kopcowanie](./images/sortowanie-przez-kopcowanie.png)
 
 ## Drzewo BST
-- TODO - dodać jakiś opis
-- Wykaż, że czas przechodzenia drzewa w porządku in-order jest liniowy - wystarczy do metody wyświetlającej in-order dodać licznik kroków(tzn. ilość wywołania tej funkcji). Później wysarczy to zliczyć, by zobaczyć, że liczba wywołań funkcji jest taka sama jak ilość węzłów.
+- **IN-ORDER** wyświetla drzewo, wypisując elementy posortowane
+- Dzięki wyświetlaniu **PRE-ORDER** w notacji z nawiasami możliwe jest łatwe narysowanie drzewa na kartce
+- Wykaż, że czas przechodzenia drzewa w porządku in-order jest liniowy => wystarczy do metody wyświetlającej in-order dodać licznik kroków(tzn. ilość wywołania tej funkcji). Później wysarczy to zliczyć, by zobaczyć, że liczba wywołań funkcji jest taka sama jak ilość węzłów.
+- Rotacje (obroty):
+
+![foto rotacji](./images/drzewo-bst-rotacje.png)
 
 
 

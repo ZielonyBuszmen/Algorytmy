@@ -26,9 +26,9 @@ namespace DrzewoBST
      *  - Search() - szuka węzła o podanej wartości - rekurencyjnie
      *  - SearchIteratively() - szuka węzła iteracyjnie
      *
-     *  - RightRotation() - (obrót) rotacja węzła w prawo
+     *  - RightRotation() - (obrót) rotacja węzła w prawo - nie zmienia się IN-ORDER, zmiany można zaobserwować w pre-order
      *  - LeftRotation() - (obrót) rotacja węzła w lewo
-     *  - InsertWithRotation() - wstawianie węzła do korzenia przy wykorzystaniu obrotów
+     *  - InsertNewRoot() - wstawianie nowego węzła do korzenia przy wykorzystaniu obrotów
      *
      *  - FindSuccerssor() - szuka następnika, jeśli nie znajdzie zwraca podane value
      *  - FindPredecessor() - szuka poprzednika, jeśli nie znajdzie zwraca podane value
@@ -406,18 +406,82 @@ namespace DrzewoBST
             }
         }
 
+        // pobiera wartość węzła, znajduje go w drzewie i wykonuje rotację w PRAWO
+        public void RightRotation(T value)
+        {
+            Node parent = this.FindParent(value);
+            Node node = Search(this.root, value);
+            Node temp = node.left;
+            node.left = temp.right;
+            temp.right = node;
+            node = temp;
 
-        /*
-    Zadanie 6
-    Napisz w C# metodę obrotu węzła w prawo i w lewo.
-    // RightRotation() // rotacja w prawo
-    // LeftRotation()  // rotacja w lewo
+            // sprawdzenie, do której "odnogi" parenta musimy przyłączyć węzeł
+            if (parent != null)
+            {
+                bool isRightChild = parent.right.value.CompareTo(value) == 0;
+                if (isRightChild)
+                {
+                    parent.right = node;
+                }
+                else
+                {
+                    parent.left = node;
+                }
+            }
+        }
 
-    Zadanie 7
-    Napisz w C# metodę wstawiania węzła do korzenia przy wykorzystaniu obrotów.
-    // InsertWithRotation()
- */
+        // pobiera wartość węzła, znajduje go w drzewie i wykonuje rotację w LEWO
+        public void LeftRotation(T value)
+        {
+            Node parent = this.FindParent(value);
+            Node node = Search(this.root, value);
+            Node temp = node.right;
+            node.right = temp.left;
+            temp.left = node;
+            node = temp;
 
+            if (parent != null)
+            {
+                bool isRightChild = parent.right.value.CompareTo(value) == 0;
+                if (isRightChild)
+                {
+                    parent.right = node;
+                }
+                else
+                {
+                    parent.left = node;
+                }
+            }
+        }
+
+        // Wstawia nowy korzeń przy pomocy obrotów
+        // nie działa - sposób z wykładu
+        public void InserNewRoot(T value)
+        {
+            Node newNode = new Node(value);
+            InsertNewRoot(this.root, newNode);
+        }
+        private void InsertNewRoot(Node węzeł, Node nowy)
+        {
+            if (węzeł == null)
+            {
+                węzeł = nowy;
+                return;
+            }
+
+            if (węzeł.value.CompareTo(nowy.value) > 0)
+            {
+                InsertNewRoot(węzeł.left, nowy);
+                RightRotation(węzeł.value);
+            }
+            else
+            {
+                InsertNewRoot(węzeł.right, nowy);
+                RightRotation(węzeł.value);
+            }
+            return;
+        }
 
         // szuka następnika w drzewie - jeśli nie znajdzie zwraca podane value
         public T FindSuccerssor(T value)
@@ -501,9 +565,17 @@ namespace DrzewoBST
 
             int[] array0 = new int[] { 11, 15, 6, 8, 5, 1, 7, 13, 17, 14 };
             DrzewoBST<int> drzewo0 = CreateTreeFromArray(array0);
+            Console.WriteLine("In order:");
+            drzewo0.ShowInOrder();
+            Console.WriteLine();
+            Console.WriteLine("Pre-order: ");
             drzewo0.ShowPreOrder();
-            drzewo0.Delete(14);
-            Console.WriteLine("Po usunieciu");
+            Console.WriteLine();
+            drzewo0.LeftRotation(15);
+            Console.WriteLine("In order bez zmian");
+            drzewo0.ShowInOrder();
+            Console.WriteLine();
+            Console.WriteLine("Pre-order ze zmianami");
             drzewo0.ShowPreOrder();
 
 
