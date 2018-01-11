@@ -10,8 +10,29 @@ namespace DrzewoBST
      * DrzewoBST
      */
     /* Lista metod:
-     *  - Show() - 
-     *  -  - 
+     *  - Show() - wyświetla jako pre-order z wcięciami
+     *  - ShowPreOrder() - wyświetla jako pre-order z nawiasami (A(B(C)))
+     *  - ShowPostOrder() - pokazuje post-order (ze spacjami)
+     *  - ShowInOrder() - pokazuje in-order (ze spacjami)
+     *  - ShowInOrderWithIndent - pokazuje in-order z wcięciami
+     *  - Height() - Wysokość drzewa
+     *  - Weight() - waga drzewa
+     *
+     *  - Insert() - wstawianie rekurencyjne
+     *  - InsertIteratively() - wstawia iteracyjnie
+     *  - Delete() - usuwa iteracyjnie podany węzeł
+     *  - GetMaxElement() - zwraca najwiekszy element
+     *  - GetMinElement() - zwraca najmniejszy element
+     *  - Search() - szuka węzła o podanej wartości - rekurencyjnie
+     *  - SearchIteratively() - szuka węzła iteracyjnie
+     *
+     *  - RightRotation() - (obrót) rotacja węzła w prawo
+     *  - LeftRotation() - (obrót) rotacja węzła w lewo
+     *  - InsertWithRotation() - wstawianie węzła do korzenia przy wykorzystaniu obrotów
+     *
+     *  - FindSuccerssor() - szuka następnika, jeśli nie znajdzie zwraca podane value
+     *  - FindPredecessor() - szuka poprzednika, jeśli nie znajdzie zwraca podane value
+     *  
      */
 
     class DrzewoBST<T> where T : IComparable<T>
@@ -244,6 +265,77 @@ namespace DrzewoBST
             }
         }
 
+        // Usuwa ITERACYJNIE podany węzeł z drzewa (metoda z wykładu, uuujowo napisana)
+        public void Delete(T value)
+        {
+            if (this.root == null) return;
+            Node temp = this.root;
+            Node parent = null;
+
+            while (temp != null)
+            {
+                if (temp.value.CompareTo(value) == 0)
+                {
+                    // tylko jedno dziecko, albo wcale
+                    if (temp.left == null)
+                    {
+                        if (parent == null) // usuwamy korzeń
+                        {
+                            this.root = temp.right;
+                        }
+                        else
+                        {
+                            if (parent.left == temp) parent.left = temp.right;
+                            else parent.right = temp.right;
+                        }
+                    }
+                    else if (temp.right == null)
+                    {
+                        if (parent == null) // usuwamy korzeń
+                        {
+                            this.root = temp.left;
+                        }
+                        else
+                        {
+                            if (parent.left == temp) parent.left = temp.left;
+                            else parent.right = temp.left;
+                        }
+                    }
+                    else if (temp.left != null && temp.right != null)
+                    {   //krok w lewo
+                        Node qParent = temp;
+                        Node q = temp.left;
+                        while (q.right != null) // teraz do oporu w prawo
+                        {
+                            qParent = q;
+                            q = q.right;
+                        }
+                        // Usuwamy q z jego miejsca, a na jego miejsce wstawiamy lewego potomka (moze byc null)
+                        if (qParent.right == q) qParent.right = q.left;
+                        else qParent.left = q.left;
+                        // teraz q przenosimy na miejsce temp
+                        if (parent == null) // usuwamy korzeń
+                        {
+                            this.root = q;
+                        }
+                        else
+                        {
+                            if (parent.left == temp) parent.left = q;
+                            else parent.right = q;
+                        }
+                        // na koniec wstawiamy potomkow temp jako potomkow q
+                        q.left = temp.left;
+                        q.right = temp.right;
+                    }
+                    return;
+                }
+                parent = temp; // szukamy dalej
+                if (temp.value.CompareTo(value) > 0) temp = temp.left;
+                else temp = temp.right;
+            }
+            return; // nie zaleziono
+        }
+
         // Zwraca największy element (zad 5A lab 11)
         public T GetMaxElement()
         {
@@ -316,16 +408,14 @@ namespace DrzewoBST
 
 
         /*
+    Zadanie 6
+    Napisz w C# metodę obrotu węzła w prawo i w lewo.
+    // RightRotation() // rotacja w prawo
+    // LeftRotation()  // rotacja w lewo
 
-Zadanie 6
-Napisz w C# metodę obrotu węzła w prawo i w lewo.
-
-Zadanie 7
-Napisz w C# metodę wstawiania węzła do korzenia przy wykorzystaniu obrotów.
-
-
-Napisz metodę do usuwanie węzła z drzewa - (jest na wykladzie)
-
+    Zadanie 7
+    Napisz w C# metodę wstawiania węzła do korzenia przy wykorzystaniu obrotów.
+    // InsertWithRotation()
  */
 
 
@@ -360,7 +450,7 @@ Napisz metodę do usuwanie węzła z drzewa - (jest na wykladzie)
             while (parent != null && parent.right != node)
             {
                 node = parent;
-                parent = this.FindParent(value);
+                parent = this.FindParent(parent.value);
             }
 
             if (parent == null) return value;
@@ -411,6 +501,13 @@ Napisz metodę do usuwanie węzła z drzewa - (jest na wykladzie)
 
             int[] array0 = new int[] { 11, 15, 6, 8, 5, 1, 7, 13, 17, 14 };
             DrzewoBST<int> drzewo0 = CreateTreeFromArray(array0);
+            drzewo0.ShowPreOrder();
+            drzewo0.Delete(14);
+            Console.WriteLine("Po usunieciu");
+            drzewo0.ShowPreOrder();
+
+
+            Console.WriteLine();
 
             int[] array1 = new int[] { 16, 10, 6, 21, 20, 18, 13, 14, 17, 4, 11 };
             DrzewoBST<int> drzewo1 = CreateTreeFromArray(array1);
