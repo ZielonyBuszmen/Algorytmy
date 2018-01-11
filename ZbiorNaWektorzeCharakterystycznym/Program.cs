@@ -6,15 +6,16 @@ using System.Threading.Tasks;
 
 namespace ZbiorNaWektorzeCharakterystycznym
 {
-
-    class ZbiorNaWektorzeCharakterystycznym
+    // Zbiór na tablicy na wektorze charakterystycznym (N = 1000)
+    class Set
     {
         private bool[] elements;
+        private const int N = 1000;
 
-        public ZbiorNaWektorzeCharakterystycznym(int maxRange = 999)
+        public Set()
         {
-            this.elements = new bool[maxRange];
-            for (int i = 0; i < maxRange; i++)
+            this.elements = new bool[N];
+            for (int i = 0; i < N; i++)
             {
                 this.elements[i] = false;
             }
@@ -45,7 +46,7 @@ namespace ZbiorNaWektorzeCharakterystycznym
         // zwraca true, jeśli element znajduje się w zbiorze. Może nosić nazwę Find()
         public bool Member(int x)
         {
-            if (x >= this.elements.Length) return false;
+            if (x >= N) return false;
             return this.elements[x];
         }
 
@@ -69,7 +70,7 @@ namespace ZbiorNaWektorzeCharakterystycznym
         // zwraca najmniejszy element
         public int Min()
         {
-            for (int i = 0; i < this.elements.Length; i++)
+            for (int i = 0; i < N; i++)
             {
                 if (this.elements[i]) return i;
             }
@@ -79,7 +80,7 @@ namespace ZbiorNaWektorzeCharakterystycznym
         // usuwa najmniejszy element
         public void DeleteMin()
         {
-            for (int i = 0; i < this.elements.Length; i++)
+            for (int i = 0; i < N; i++)
             {
                 if (this.elements[i])
                 {
@@ -101,7 +102,7 @@ namespace ZbiorNaWektorzeCharakterystycznym
         // wyświetla elementy zbioru
         public void Show()
         {
-            for (int i = 0; i < this.elements.Length; i++)
+            for (int i = 0; i < N; i++)
             {
                 if (this.elements[i])
                 {
@@ -111,20 +112,12 @@ namespace ZbiorNaWektorzeCharakterystycznym
         }
 
         // Union(s1, s2)  - s1 U s2 - (suma zbiorów)
-        public static ZbiorNaWektorzeCharakterystycznym Union(ZbiorNaWektorzeCharakterystycznym s1, ZbiorNaWektorzeCharakterystycznym s2)
+        public static Set Union(Set s1, Set s2)
         {
-            ZbiorNaWektorzeCharakterystycznym set = new ZbiorNaWektorzeCharakterystycznym();
-            for (int i = 0; i < s1.elements.Length; i++)
+            Set set = new Set();
+            for (int i = 0; i < N; i++)
             {
-                if (s1.elements[i])
-                {
-                    set.Insert(i);
-                }
-            }
-
-            for (int i = 0; i < s2.elements.Length; i++)
-            {
-                if (s2.elements[i])
+                if (s1.elements[i] || s2.elements[i])
                 {
                     set.Insert(i);
                 }
@@ -133,13 +126,11 @@ namespace ZbiorNaWektorzeCharakterystycznym
         }
 
         // Intersection(s1, s2) - s1 ∩ s2 (iloczyn zbiorów, elementy wspólne)
-        public static ZbiorNaWektorzeCharakterystycznym Intersection(ZbiorNaWektorzeCharakterystycznym s1, ZbiorNaWektorzeCharakterystycznym s2)
+        public static Set Intersection(Set s1, Set s2)
         {
-            ZbiorNaWektorzeCharakterystycznym set = new ZbiorNaWektorzeCharakterystycznym();
-            // bierem krotszy ciag
-            ZbiorNaWektorzeCharakterystycznym shorter = s1.elements.Length <= s2.elements.Length ? s1 : s2;
+            Set set = new Set();
 
-            for (int i = 0; i < shorter.elements.Length; i++)
+            for (int i = 0; i < N; i++)
             {
                 if (s1.elements[i] == s2.elements[i] && s1.elements[i] == true)
                 {
@@ -150,14 +141,11 @@ namespace ZbiorNaWektorzeCharakterystycznym
         }
 
         // Difference(s1, s2) - s1 \ s2 (różnica zbiorów)
-        public static ZbiorNaWektorzeCharakterystycznym Difference(ZbiorNaWektorzeCharakterystycznym s1, ZbiorNaWektorzeCharakterystycznym s2)
+        public static Set Difference(Set s1, Set s2)
         {
-            ZbiorNaWektorzeCharakterystycznym set = new ZbiorNaWektorzeCharakterystycznym();
-            // bierem krotszy ciag
-            ZbiorNaWektorzeCharakterystycznym shorter = s1.elements.Length <= s2.elements.Length ? s1 : s2;
-
+            Set set = new Set();
             //tworzymy kopie s1
-            for (int i = 0; i < s1.elements.Length; i++)
+            for (int i = 0; i < N; i++)
             {
                 if (s1.elements[i])
                 {
@@ -166,7 +154,7 @@ namespace ZbiorNaWektorzeCharakterystycznym
             }
 
             // usuwamy z wyniku elementy z s2
-            for (int i = 0; i < shorter.elements.Length; i++)
+            for (int i = 0; i < N; i++)
             {
                 if (s2.elements[i])
                 {
@@ -182,8 +170,8 @@ namespace ZbiorNaWektorzeCharakterystycznym
         static void Main(string[] args)
         {
             Console.WriteLine("Zbiór na wektorze charakterystycznym");
-            ZbiorNaWektorzeCharakterystycznym set1 = new ZbiorNaWektorzeCharakterystycznym();
-            ZbiorNaWektorzeCharakterystycznym set2 = new ZbiorNaWektorzeCharakterystycznym();
+            Set set1 = new Set();
+            Set set2 = new Set();
             set1.BuildSet(1, 3, 4, 5, 7, 8, 9, 10);
             set2.BuildSet(7, 8, 10, 15, 22, 24, 29, 33);
 
@@ -191,19 +179,20 @@ namespace ZbiorNaWektorzeCharakterystycznym
             Console.WriteLine();
 
             Console.WriteLine("Suma zbiorów set1 , set2");
-            ZbiorNaWektorzeCharakterystycznym temp = ZbiorNaWektorzeCharakterystycznym.Union(set1, set2);
+            Set temp = Set.Union(set1, set2);
             temp.Show();
             Console.WriteLine();
 
             Console.WriteLine("Iloczyn zbiorów set1 i set2");
-            temp = ZbiorNaWektorzeCharakterystycznym.Intersection(set1, set2);
+            temp = Set.Intersection(set1, set2);
             temp.Show();
             Console.WriteLine();
 
             Console.WriteLine("Różnica s1 \\ s2");
-            temp = ZbiorNaWektorzeCharakterystycznym.Difference(set1, set2);
+            temp = Set.Difference(set1, set2);
             temp.Show();
             Console.WriteLine();
+            Console.WriteLine("Rozmiar różnicy: {0}", temp.Size());
 
             Console.ReadKey();
         }
