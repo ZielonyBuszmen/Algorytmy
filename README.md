@@ -29,11 +29,11 @@ Materiały na drugi kolos z Algorytmów i Danych Struktur.
 
 
 ## Lab 11 - Drzewa BST
-- *Do dokończenia*  [Drzewo BST](DrzewoBST/Program.cs)
+- [Drzewo BST](DrzewoBST/Program.cs) - 500 linii kodu w tej zdradzieckiej strukturze... ;)
 
 
-## Lab 12 - Zbiory (?)
-- [to do](#)
+## Lab 12 - Zbiory, Hashowanie
+- [Zbiór na wektorze charakterystycznym](ZbiorNaWektorzeCharakterystycznym/Program.cs)
 
 
 ## Lab 13 - Grafy (?)
