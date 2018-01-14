@@ -43,6 +43,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZbiorHashowanieZMetLancucho
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZbiorZWlasnymHashemZMetLancuchowa", "ZbiorZWlasnymHashemZMetLancuchowa\ZbiorZWlasnymHashemZMetLancuchowa.csproj", "{A9F87EE1-F9AB-4986-9374-679DA36C8065}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Kolos2_PrzykladoweZadania", "Kolos2_PrzykladoweZadania", "{00AA0148-378F-48B2-9B04-AA41072D7077}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kolos2_przyklad_zad1", "Kolos2_PrzykladoweZadania\Kolos2_przyklad_zad1\Kolos2_przyklad_zad1.csproj", "{BCC587B8-6A61-4D51-B9AD-FBA81020D912}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -129,9 +133,16 @@ Global
 		{A9F87EE1-F9AB-4986-9374-679DA36C8065}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A9F87EE1-F9AB-4986-9374-679DA36C8065}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A9F87EE1-F9AB-4986-9374-679DA36C8065}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BCC587B8-6A61-4D51-B9AD-FBA81020D912}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCC587B8-6A61-4D51-B9AD-FBA81020D912}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCC587B8-6A61-4D51-B9AD-FBA81020D912}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCC587B8-6A61-4D51-B9AD-FBA81020D912}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BCC587B8-6A61-4D51-B9AD-FBA81020D912} = {00AA0148-378F-48B2-9B04-AA41072D7077}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E1069829-FFC4-4362-9462-7857295629DE}
