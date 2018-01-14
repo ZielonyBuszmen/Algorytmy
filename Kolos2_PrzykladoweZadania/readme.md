@@ -4,7 +4,10 @@ ___
 
 # Zadania przykładowe - **kolos nr 2**
 
-### Zadanie 1 - *Do dokończenia* [>> KLIK <<](Kolos2_przyklad_zad1/Program.cs)
+### Zadanie 1 
+- [Rozwiązanie na własnej liście](Kolos2_przyklad_zad1/Program.cs)
+- [Rozwiązanie na typach wbudowanych w C#](Kolos2_przyklad_zad1B/Program.cs) - wielomian budowany jest na **`SortedList<int, int>`**
+
 Chcemy reprezentować wielomiany w postaci listy jednokierunkowej par (współczynnik; wykładnik). Uwaga: przechowujemy tylko współczynniki niezerowe. Napisz zestaw metod do tworzenia takich wielomianów na podstawie tablicy, a także dodawania i odejmowania takich wielomianów oraz różniczkowania.
 Np. tworzenie z tablicy {1,2,5,0,0,8} oznacza 8x<sup>5</sup> + 5x<sup>2</sup> + 2x + 1. Odpowiednia lista ma mieć postać (8;5)->(5;2)->(2;1)->(1;0)
 
