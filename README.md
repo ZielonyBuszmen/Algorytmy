@@ -44,7 +44,7 @@ Materiały na drugi kolos z Algorytmów i Danych Struktur.
 
 
 ## **Kolos nr 2**
-- [Zadania przykładowe - kolos nr 2](Kolos2_Przygotowanie/)
+- [Zadania przykładowe - kolos nr 2](Kolos2_PrzykladoweZadania/)
 
 
 # Opisy
