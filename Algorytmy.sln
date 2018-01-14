@@ -41,6 +41,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZbiorNaWektorzeCharakteryst
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZbiorHashowanieZMetLancuchowa", "ZbiorHashowanieZMetLancuchowa\ZbiorHashowanieZMetLancuchowa.csproj", "{040B2BD6-5078-42F7-A1CA-32783CD44066}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZbiorZWlasnymHashemZMetLancuchowa", "ZbiorZWlasnymHashemZMetLancuchowa\ZbiorZWlasnymHashemZMetLancuchowa.csproj", "{A9F87EE1-F9AB-4986-9374-679DA36C8065}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -123,6 +125,10 @@ Global
 		{040B2BD6-5078-42F7-A1CA-32783CD44066}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{040B2BD6-5078-42F7-A1CA-32783CD44066}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{040B2BD6-5078-42F7-A1CA-32783CD44066}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9F87EE1-F9AB-4986-9374-679DA36C8065}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9F87EE1-F9AB-4986-9374-679DA36C8065}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9F87EE1-F9AB-4986-9374-679DA36C8065}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9F87EE1-F9AB-4986-9374-679DA36C8065}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

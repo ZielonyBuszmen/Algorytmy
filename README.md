@@ -35,11 +35,16 @@ Materiały na drugi kolos z Algorytmów i Danych Struktur.
 ## Lab 12 - Zbiory, Hashowanie
 - [Zbiór na wektorze charakterystycznym](ZbiorNaWektorzeCharakterystycznym/Program.cs)
 - [Zbiór na tablicy z haszowaniem z metodą łańcuchową](ZbiorHashowanieZMetLancuchowa/Program.cs) - korzysta z wbudowanego GetHashCode()
+    - *Do dokończenia* [Zbiór na tablicy z haszowaniem (własnym) z metodą łańcuchową](ZbiorZWlasnymHashemZMetLancuchowa/Program.cs) - korzysta z własnej implementacji funkcji hashującej
+- []()
 
 
 ## Lab 13 - Grafy (?)
 - [to do](#)
 
+
+## **Kolos nr 2**
+- [Zadania przykładowe - kolos nr 2](Kolos2_Przygotowanie/)
 
 
 # Opisy
