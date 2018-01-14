@@ -49,6 +49,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kolos2_przyklad_zad1", "Kol
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kolos2_przyklad_zad1B", "Kolos2_PrzykladoweZadania\Kolos2_przyklad_zad1B\Kolos2_przyklad_zad1B.csproj", "{878DDE94-039B-4E40-AE2F-0E0166B4C958}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZbiorHashowanieZAdresowaniemOtwartym", "ZbiorHashowanieZAdresowaniemOtwartym\ZbiorHashowanieZAdresowaniemOtwartym.csproj", "{22B3C63E-E268-4EDA-B5B4-F81D0D75ADB1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -143,6 +145,10 @@ Global
 		{878DDE94-039B-4E40-AE2F-0E0166B4C958}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{878DDE94-039B-4E40-AE2F-0E0166B4C958}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{878DDE94-039B-4E40-AE2F-0E0166B4C958}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22B3C63E-E268-4EDA-B5B4-F81D0D75ADB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22B3C63E-E268-4EDA-B5B4-F81D0D75ADB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22B3C63E-E268-4EDA-B5B4-F81D0D75ADB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22B3C63E-E268-4EDA-B5B4-F81D0D75ADB1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C570E359-55F0-43F3-B98E-21D3A108793F}</ProjectGuid>
+    <ProjectGuid>{22B3C63E-E268-4EDA-B5B4-F81D0D75ADB1}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>ConsoleApp1</RootNamespace>
-    <AssemblyName>ConsoleApp1</AssemblyName>
+    <RootNamespace>ZbiorHashowanieZAdresowaniemOtwartym</RootNamespace>
+    <AssemblyName>ZbiorHashowanieZAdresowaniemOtwartym</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
