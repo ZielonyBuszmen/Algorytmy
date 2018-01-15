@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ZbiorNaWektorzeCharakterystycznym
 {
-    // Zbiór na tablicy na wektorze charakterystycznym (N = 1000)
+    // Zbiór na tablicy na wektorze charakterystycznym z adresowaniem bezpośrednim (N = 1000)
     class Set
     {
         private bool[] elements;
