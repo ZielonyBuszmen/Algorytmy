@@ -36,7 +36,8 @@ Materiały na drugi kolos z Algorytmów i Danych Struktur.
 - [Zbiór na wektorze charakterystycznym z adresowaniem bezpośrednim](ZbiorNaWektorzeCharakterystycznym/Program.cs)
 - [Zbiór na tablicy z haszowaniem z metodą łańcuchową](ZbiorHashowanieZMetLancuchowa/Program.cs) - korzysta z wbudowanego GetHashCode()
     - [Zbiór na tablicy z haszowaniem (własnym) z metodą łańcuchową](ZbiorZWlasnymHashemZMetLancuchowa/Program.cs) - korzysta z własnej implementacji funkcji hashującej
-- **do dokonczenia** [Zbiór na tablicy z haszowaniem z adresowaniem otwartym](ZbiorHashowanieZAdresowaniemOtwartym/Program.cs) - korzysta z wbudowanego GetHashCode()
+- [Zbiór na tablicy z haszowaniem z adresowaniem otwartym](ZbiorHashowanieZAdresowaniemOtwartym/Program.cs) - korzysta z wbudowanego GetHashCode()
+- [Zbiór na Hashtable z .NET](ZbiorHashtable/Program.cs) - zbiór oparty o wbudowaną strukturę danych (z .NET) `Hashtable`
 
 
 ## Lab 13 - Grafy (?)
