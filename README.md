@@ -2,6 +2,10 @@
 Materiały na drugi kolos z Algorytmów i Danych Struktur.
 **Wyświetlanie Pre-order z nawiasami** najlepszą metodą na ogarnięcie struktury!
 
+Debugowanie!!!
+- **F10** - przenosi wykonanie do następnej linijki (step over)
+- **F11** - wchdozi do funkcji (step into)
+
 
 ## Lab 8 - Lista, Stos, Kolejka
 - [Stos (LIFO)](StosLIFO/Program.cs)
@@ -38,10 +42,12 @@ Materiały na drugi kolos z Algorytmów i Danych Struktur.
     - [Zbiór na tablicy z haszowaniem (własnym) z metodą łańcuchową](ZbiorZWlasnymHashemZMetLancuchowa/Program.cs) - korzysta z własnej implementacji funkcji hashującej
 - [Zbiór na tablicy z haszowaniem z adresowaniem otwartym](ZbiorHashowanieZAdresowaniemOtwartym/Program.cs) - korzysta z wbudowanego GetHashCode()
 - [Zbiór na Hashtable z .NET](ZbiorHashtable/Program.cs) - zbiór oparty o wbudowaną strukturę danych (z .NET) `Hashtable`
+- *Do dokonczenia* [Struktura Union-Find na tablicy z ustalonym przedziałem](#)
+    - *Do dokonczenia* [Union-Find na liście dowiązaniowej](#)
+    - *Do dokonczenia* [Union-Find jako drzewo](#)
 
-
-## Lab 13 - Grafy (?)
-- [to do](#)
+## Lab 13 - Grafy
+- [Graf nieskierowany](Graf/Program.cs) - (macierz sąsiedztw, listy sąsiedztwa, BFS, DFS)
 
 
 ## **Kolos nr 2**
@@ -115,6 +121,37 @@ Kopiec binarny (binary heap - stóg, sterta) to zupełne drzewo binarne, spełni
 ![foto rotacji](./images/drzewo-bst-rotacje.png)
 
 
+## Grafy
+- **Macierz sąsiedztwa**
+
+![foto macierz sasiedztwa](./images/macierz-sasiedztwa.png)
+
+- **Macierz icydencji**
+
+![foto macierz incydencji](./images/macierz-incydencji.png)
+
+- **Listy sąsiedztwa**
+
+![foto listy sasiedztwa](./images/listy-sasiedztwa.png)
+
+- **Złożoność grafu**
+
+![foto zlozonosc grafu](./images/zlozonosc-grafu.png)
+
+- **Krawędzie z wagami**
+
+![foto krawdzie z wagami](./images/krawedzie-z-wagami.png)
+
+- **DFS** - przechodzenie przez graf w głąb - DepthFirstSearch
+
+![foto krawdzie z wagami](./images/graf-dfs.png)
+
+- **BFS** - przechodzenie przez graf wszerz - BreadthFirstSearch
+
+![foto krawdzie z wagami](./images/graf-bfs.png)
+
+
+
 
 
 # Słowniczek
@@ -162,4 +199,6 @@ Kopiec binarny (binary heap - stóg, sterta) to zupełne drzewo binarne, spełni
     - `ExtractMax()` - zwraca i usuwa największy element z kopca. Następnie na to miejsca wrzuca element najmniejszy
     - `Maximum()` - zwraca (bez usuwania) największy element kopca
     - `HeapSort()` - sortowanie przez kopcowanie
-    
+- Graf (Graph)
+
+

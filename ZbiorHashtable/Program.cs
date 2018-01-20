@@ -115,7 +115,7 @@ namespace ZbiorHashtable
 
             Console.WriteLine(s1);
             Console.WriteLine(s2);
-
+            
             s1.Delete(377);
             Console.WriteLine(s1);
 
