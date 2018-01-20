@@ -48,6 +48,7 @@ Debugowanie!!!
 
 ## Lab 13 - Grafy
 - [Graf nieskierowany](Graf/Program.cs) - (macierz sąsiedztw, listy sąsiedztwa, BFS, DFS)
+- [Algorytm Dijkstry](#/Program.cs) - (macierz sąsiedztw, listy sąsiedztwa, BFS, DFS)
 
 
 ## **Kolos nr 2**
