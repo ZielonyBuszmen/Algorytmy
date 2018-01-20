@@ -42,14 +42,15 @@ Debugowanie!!!
     - [Zbiór na tablicy z haszowaniem (własnym) z metodą łańcuchową](ZbiorZWlasnymHashemZMetLancuchowa/Program.cs) - korzysta z własnej implementacji funkcji hashującej
 - [Zbiór na tablicy z haszowaniem z adresowaniem otwartym](ZbiorHashowanieZAdresowaniemOtwartym/Program.cs) - korzysta z wbudowanego GetHashCode()
 - [Zbiór na Hashtable z .NET](ZbiorHashtable/Program.cs) - zbiór oparty o wbudowaną strukturę danych (z .NET) `Hashtable`
-- *Do dokonczenia* [Struktura Union-Find na tablicy z ustalonym przedziałem](#)
-    - *Do dokonczenia* [Union-Find na liście dowiązaniowej](#)
-    - *Do dokonczenia* [Union-Find jako drzewo](#)
+- *Do dokonczenia [Struktura Union-Find na tablicy z ustalonym przedziałem](#)*
+    - *Do dokonczenia [Union-Find na liście dowiązaniowej](#)*
+    - *Do dokonczenia [Union-Find jako drzewo](#)*
 
 ## Lab 13 - Grafy
 - [Graf nieskierowany](Graf/Program.cs) - (macierz sąsiedztw, listy sąsiedztwa, BFS, DFS)
-- *Do dokonczenia* [Algorytm Dijkstry](#/Program.cs)
-
+- [Algorytm Dijkstry](AlgorytmDijkstry/Program.cs) - rozwiązanie Karwosia
+- *Do dokonczenia [Algorytm Prima](#)*
+- *Do dokonczenia [Minimalne drzewo rozpinające](#)*
 
 ## **Kolos nr 2**
 - [Zadania przykładowe - kolos nr 2](Kolos2_PrzykladoweZadania/)
