@@ -54,6 +54,7 @@ Debugowanie!!!
 
 ## **Kolos nr 2**
 - [Zadania przykładowe - kolos nr 2](Kolos2_PrzykladoweZadania/)
+- [Kolos z poprzedniego roku](Kolos2_ZPoprzedniegoRoku/)
 
 
 # Opisy
