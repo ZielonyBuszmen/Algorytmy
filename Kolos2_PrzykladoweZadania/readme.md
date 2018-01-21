@@ -20,6 +20,7 @@ Opracuj strukturę danych Zbiór opartą na liście dowiązaniowej. Napisz metod
 Napisz metodę (iteracyjną), która za pomocą kolejki wypisuje zawartość drzewa kolejnymi poziomami.
 
 ### Zadanie 4
+- [Rozwiązanie by PKacz](Kolos2_przyklad_zad4/Program.cs)
 Drzewo BST odczytano w porządku **pre-order** i otrzymano 6, 3, 1, 2, 4, 5, 7. Czy możemy odtworzyć to drzewo? Napisz metodę odtwarzającą drzewo na podstawie odczytu pre-order, jeżeli drzewa nie można odtworzyć (dane są sprzeczne, np. 6, 3, 1, 2, 4, 7, 5) metoda ma zwracać drzewo puste.
 
 ### Zadanie 5

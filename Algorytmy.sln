@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27130.2020
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListaPosortowana", "ListaPosortowana\ListaPosortowana.csproj", "{3F3731ED-22C1-4786-992F-3A35CEB797D8}"
 EndProject
@@ -58,6 +58,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kolos2_przyklad_zad3", "Kolos2_PrzykladoweZadania\Kolos2_przyklad_zad3\Kolos2_przyklad_zad3.csproj", "{FA14F019-6126-4FE3-B264-7C863C698557}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlgorytmDijkstry", "AlgorytmDijkstry\AlgorytmDijkstry.csproj", "{233EA5EC-BE36-46D8-A388-6696AC4AA1CF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kolos2_przyklad_zad4", "Kolos2_PrzykladoweZadania\Kolos2_przyklad_zad4\Kolos2_przyklad_zad4.csproj", "{F68A8C6D-8547-44B9-B1BA-EA2275C5840E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -173,6 +175,10 @@ Global
 		{233EA5EC-BE36-46D8-A388-6696AC4AA1CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{233EA5EC-BE36-46D8-A388-6696AC4AA1CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{233EA5EC-BE36-46D8-A388-6696AC4AA1CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F68A8C6D-8547-44B9-B1BA-EA2275C5840E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F68A8C6D-8547-44B9-B1BA-EA2275C5840E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F68A8C6D-8547-44B9-B1BA-EA2275C5840E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F68A8C6D-8547-44B9-B1BA-EA2275C5840E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -181,6 +187,7 @@ Global
 		{BCC587B8-6A61-4D51-B9AD-FBA81020D912} = {00AA0148-378F-48B2-9B04-AA41072D7077}
 		{878DDE94-039B-4E40-AE2F-0E0166B4C958} = {00AA0148-378F-48B2-9B04-AA41072D7077}
 		{FA14F019-6126-4FE3-B264-7C863C698557} = {00AA0148-378F-48B2-9B04-AA41072D7077}
+		{F68A8C6D-8547-44B9-B1BA-EA2275C5840E} = {00AA0148-378F-48B2-9B04-AA41072D7077}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E1069829-FFC4-4362-9462-7857295629DE}
