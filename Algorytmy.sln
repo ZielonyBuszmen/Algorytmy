@@ -73,7 +73,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kolos2_2017_zadanie4", "Kol
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kolos2_2017_zadanie5", "Kolos2_ZPoprzedniegoRoku\Kolos2_2017_zadanie5\Kolos2_2017_zadanie5.csproj", "{3439FF4F-0D0E-4B98-9315-E1E7B353EA59}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kolos2_przyklad_zad5", "Kolos2_przyklad_zad5\Kolos2_przyklad_zad5.csproj", "{F2A6871A-378C-48E1-A476-24DA25A52E99}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kolos2_przyklad_zad5", "Kolos2_PrzykladoweZadania\Kolos2_przyklad_zad5\Kolos2_przyklad_zad5.csproj", "{F2A6871A-378C-48E1-A476-24DA25A52E99}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

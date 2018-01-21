@@ -51,8 +51,8 @@ Debugowanie!!!
 - [Algorytm Dijkstry](AlgorytmDijkstry/Program.cs) - rozwiązanie Karwosia
 - *Do dokonczenia* [Algorytm Prima](#) - minimalne drzewo rozpinające
 
-## **Kolos nr 2**
-- [Zadania przykładowe - kolos nr 2](Kolos2_PrzykladoweZadania/)
+# **Kolos nr 2**
+- [Zadania przykładowe](Kolos2_PrzykladoweZadania/)
 - [Kolos z poprzedniego roku (2017)](Kolos2_ZPoprzedniegoRoku/)
 
 
