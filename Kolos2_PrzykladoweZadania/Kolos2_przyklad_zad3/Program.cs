@@ -10,6 +10,9 @@ using System.Threading.Tasks;
 /// </summary>
 namespace Kolos2_przyklad_zad3
 {
+    // zadanie 3
+
+    // Napisz metodę (iteracyjną), która za pomocą kolejki wypisuje zawartość drzewa kolejnymi poziomami.
     class Wezel
     {
         public int wartosc;

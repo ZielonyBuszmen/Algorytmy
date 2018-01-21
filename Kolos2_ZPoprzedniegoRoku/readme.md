@@ -49,7 +49,7 @@ Napisz metodę dublującą na liście wszystkie elementy o podanej wartości klu
 Napisz metodę do tworzenia drzewa BST o możliwie najmniejszej wysokości na podstawie uporządkowanego rosnąco ciągu kluczy w tablicy, np: `{2, 4, 7, 12, 15, 20, 25}`
 
 ### Zadanie 5
-- [Rozwiązanie by `Starszy Rocznik`](Kolos2_2017_zadanie5/Program.cs) - zadanie nie jest dokończone
+- *Do dokonczenia* [Rozwiązanie](Kolos2_2017_zadanie5/Program.cs)
 
 W algorytmie BFS kolejność przechodzenia wierzchołków wyznacza pewne drzewo (jakieś). Napisz metodę, która jako argumenty pobiera listową reprezetnację drzewa i wierzchołków, a zwraca listę krawędzi: pary (wierzchołek początkowy, wierzchołek końcowy) drzewa.
 Dla grafu jak na rysunki i wierzchołka 1 zwraca `{(1,2), (2,5), (2,3), (3,4), (4,6)}`

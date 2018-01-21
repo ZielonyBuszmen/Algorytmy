@@ -49,12 +49,11 @@ Debugowanie!!!
 ## Lab 13 - Grafy
 - [Graf nieskierowany](Graf/Program.cs) - (macierz sąsiedztw, listy sąsiedztwa, BFS, DFS)
 - [Algorytm Dijkstry](AlgorytmDijkstry/Program.cs) - rozwiązanie Karwosia
-- *Do dokonczenia [Algorytm Prima](#)*
-- *Do dokonczenia [Minimalne drzewo rozpinające](#)*
+- *Do dokonczenia* [Algorytm Prima](#) - minimalne drzewo rozpinające
 
 ## **Kolos nr 2**
 - [Zadania przykładowe - kolos nr 2](Kolos2_PrzykladoweZadania/)
-- [Kolos z poprzedniego roku](Kolos2_ZPoprzedniegoRoku/)
+- [Kolos z poprzedniego roku (2017)](Kolos2_ZPoprzedniegoRoku/)
 
 
 # Opisy

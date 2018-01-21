@@ -4,8 +4,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+/// <summary>
+/// Rozwiązanie by odisei369
+/// </summary>
 namespace Kolos2_przyklad_zad5
 {
+    // zadanie 5
+
+    // Napisz metodę, która dla spójnego grafu nieskierowanego, dla którego dane są liczbowe wagi krawędzi,
+    // znajduje drzewo rozpinające o maksymalnej wartości.
+
     class Graph
     {
         Dictionary<char, Dictionary<char, int>> vertices = new Dictionary<char, Dictionary<char, int>>();

@@ -6,6 +6,13 @@ using System.Threading.Tasks;
 
 namespace Kolos2_przyklad_zad1B
 {
+    // zadanie 1
+
+    // Chcemy reprezentować wielomiany w postaci listy jednokierunkowej par (współczynnik; wykładnik). 
+    // Uwaga: przechowujemy tylko współczynniki niezerowe. Napisz zestaw metod do tworzenia takich wielomianów 
+    // na podstawie tablicy, a także dodawania i odejmowania takich wielomianów oraz różniczkowania.
+    // Np.tworzenie z tablicy {1,2,5,0,0,8}
+    // oznacza 8x^5 + 5x^2 + 2x + 1. Odpowiednia lista ma mieć postać(8;5)->(5;2)->(2;1)->(1;0)
     class Wielomian
     {
         // <int, int> => <wykladnik, wspolczynnik>

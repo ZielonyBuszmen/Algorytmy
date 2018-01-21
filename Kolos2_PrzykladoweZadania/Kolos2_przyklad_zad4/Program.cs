@@ -4,8 +4,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+/// <summary>
+/// Rozwiązanie by pkacz
+/// </summary>
 namespace Kolos_przyklad_zad4
 {
+    // zadanie 4
+
+    // Drzewo BST odczytano w porządku pre-order i otrzymano 6, 3, 1, 2, 4, 5, 7. 
+    // Czy możemy odtworzyć to drzewo? Napisz metodę odtwarzającą drzewo na podstawie odczytu pre-order, 
+    // jeżeli drzewa nie można odtworzyć (dane są sprzeczne, np. 6, 3, 1, 2, 4, 7, 5) metoda ma zwracać drzewo puste.
     class Program
     {
         static void Main(string[] args)
