@@ -1,7 +1,3 @@
-## [<< WSTECZ](../)
-
-___
-
 # Zadania przykładowe - **kolos nr 2**
 
 ### Zadanie 1 
@@ -12,6 +8,8 @@ Chcemy reprezentować wielomiany w postaci listy jednokierunkowej par (współcz
 Np. tworzenie z tablicy {1,2,5,0,0,8} oznacza 8x<sup>5</sup> + 5x<sup>2</sup> + 2x + 1. Odpowiednia lista ma mieć postać (8;5)->(5;2)->(2;1)->(1;0)
 
 ### Zadanie 2
+- [Rozwiązanie ](Kolos2_przyklad_zad2/Program.cs)
+
 Opracuj strukturę danych Zbiór opartą na liście dowiązaniowej. Napisz metodą Suma (mnogościowa) tworzącą listę z elementów dwóch list. Napisz także metodę Iloczyn (mnogościowy) tworzący listę z elementów wspólnych (o takiej samej wartości klucza) z dwóch list. Dodaj metodę Różnica (mnogościowa). Rozważ dwa przypadki listy nieuporządkowane i uporządkowane. Jaka jest złożoność opracowanych algorytmów (metod)? 
 
 ### Zadanie 3

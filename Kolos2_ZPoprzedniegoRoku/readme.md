@@ -1,4 +1,4 @@
-# Zadania z poprzedniego roku - **kolos nr 2**
+# Zadania z poprzedniego roku (2017) - **kolos nr 2**
 
 ### Zadanie 1
 - [Rozwiązanie by `Starszy Rocznik`](Kolos2_2017_zadanie1/Program.cs)
