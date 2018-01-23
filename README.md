@@ -53,7 +53,8 @@ Debugowanie!!!
 
 # **Kolos nr 2**
 - [Zadania przykładowe](Kolos2_PrzykladoweZadania/)
-- [Kolos z poprzedniego roku (2017)](Kolos2_ZPoprzedniegoRoku/)
+- [Kolos z poprzedniego roku (zima 2016/2017)](Kolos2_ZPoprzedniegoRoku/)
+- [Kolos właściwy (zima 2017/2018)](Kolos2_2018/)
 
 
 # Opisy
