@@ -1,5 +1,9 @@
 # Algorytmy
-Materiały na drugi kolos z Algorytmów i Danych Struktur.
+Znajduje się tutaj dosyć spore repo z kodem i materiałami przeznaczonymi na drugi kolos z Algorytmów i Danych Struktur.
+
+Zachęcam do uzupełniania wybrakowanych kodów poprzez tworzenie *Pull Requestów*.
+
+#### Szybkie notatki
 **Wyświetlanie Pre-order z nawiasami** najlepszą metodą na ogarnięcie struktury!
 
 Debugowanie!!!
