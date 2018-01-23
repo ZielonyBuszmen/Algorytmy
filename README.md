@@ -11,6 +11,37 @@ Debugowanie!!!
 - **F11** - wchdozi do funkcji (step into)
 
 
+## Lab 1 - Wprowadzenie
+- [to do](#)
+
+
+## Lab 2 - Niezmienniki, O(n), złożoność algorytmów
+- [to do](#)
+
+
+## Lab 3 - Rekurencja, dziel i zwyciężaj
+- [to do](#)
+
+
+## Lab 4 - Sortowanie szybkie i rekurencja
+- [to do](#)
+
+
+## Lab 5 - Sortowanie
+- [to do](#)
+
+
+## Lab 6 - Programowanie dynamiczne vs Zachłanne
+- [to do](#)
+
+
+# Lab 7 -  **Kolos nr 1**
+- [Zadania przykładowe](#) *Do dokonczenia*
+- [Kolos właściwy (zima 2017/2018)](#) *Do dokonczenia*
+
+______
+
+
 ## Lab 8 - Lista, Stos, Kolejka
 - [Stos (LIFO)](StosLIFO/Program.cs)
     - [Sprawdzenie poprawności nawiasów w wyrażeniu za pomocą stosu](Stos-SprawdzeniePoprawnosciNawiasow/Program.cs)
