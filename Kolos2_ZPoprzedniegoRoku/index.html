@@ -1,0 +1,63 @@
+﻿<pre>Aktualizacja pliku: 23.01.2018 11:48</pre>
+<h1><a id="Zadania_z_poprzedniego_roku_2017__kolos_nr_2_0"></a>Zadania z poprzedniego roku (2017) - <strong>kolos nr 2</strong></h1>
+<h3><a id="Zadanie_1_2"></a>Zadanie 1</h3>
+<ul>
+<li><a href="Kolos2_2017_zadanie1/Program.cs">Rozwiązanie by <code>Starszy Rocznik</code></a></li>
+</ul>
+<p>Położono na stosie kolejne liczby od 0 do n (w tej kolejności). W międzyczasie pomiędzy położeniami wykonano zdejmowanie, którego rezultaty wypisywano. Napisz metodę sprawdzającą, czy następujący ciąg mógł zostać wypisany? Przykładowo dla <code>n = 9</code> ciąg <code>1 3 2 0 4 5 7 6 8 9</code> tak; <code>1 0 4 6 3 8 7 9 5 2</code> nie.</p>
+<h3><a id="Zadanie_2_7"></a>Zadanie 2</h3>
+<ul>
+<li><a href="Kolos2_2017_zadanie2/Program.cs">Rozwiązanie by <code>Starszy Rocznik</code></a></li>
+</ul>
+<p>Mamy kopiec minimalny taki, że na jego wierzchołku znajduje się element najmniejszy (dzieci są większe). Napisz metodę sprawdzającą, czy podana tablica jest kopcem minimalnym.</p>
+<h3><a id="Zadanie_3_12"></a>Zadanie 3</h3>
+<ul>
+<li><a href="Kolos2_2017_zadanie3/Program.cs">Rozwiązanie by <code>Starszy Rocznik</code></a></li>
+</ul>
+<p>Mamy jednokierunkową listę dowiązaniową przechowujacą liczby naturalne.</p>
+<pre><code class="language-csharp">  <span class="hljs-keyword">class</span> <span class="hljs-title">Lista</span>
+  {
+      <span class="hljs-keyword">class</span> <span class="hljs-title">Wezel</span>
+      {
+          <span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> dane;
+          <span class="hljs-keyword">public</span> Wezel nastepny;
+          <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Wezel</span>(<span class="hljs-params"><span class="hljs-keyword">int</span> wart</span>)
+          </span>{
+              dane = wart;
+          }
+      }
+      Wezel head;
+      <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">Dodaj</span>(<span class="hljs-params"><span class="hljs-keyword">int</span> liczba</span>)
+      </span>{
+          Wezel tmp = <span class="hljs-keyword">new</span> Wezel(liczba);
+          tmp.nastepny = head;
+          head = tmp;
+      }
+      <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">Wyswietl</span>(<span class="hljs-params"></span>)
+      </span>{
+          <span class="hljs-keyword">for</span> (Wezel w = head; w != <span class="hljs-keyword">null</span>; w = w.nastepny)
+              Console.Write(w.dane + <span class="hljs-string">" "</span>);
+          Console.WriteLine();
+      }
+  }
+</code></pre>
+<p>Napisz metodę dublującą na liście wszystkie elementy o podanej wartości klucza, tzn. bezpośrednio za węzłem o podanej wartości klucza należy wstawić kolejny węzeł z tą wartością. Uwaga: należy napisać program testujący uwzględniający wszystkie przypadki (węzeł na początku, końcu, w środku). Przykładowe dane testowe <code>{1, 1, 1, 2, 3, 5, 3, 1, 1, 4, 3, 1, 1, 4, 3, 2, 1, 1, 1}</code>.</p>
+<h3><a id="Zadanie_4_45"></a>Zadanie 4</h3>
+<ul>
+<li><a href="Kolos2_2017_zadanie4/Program.cs">Rozwiązanie by <code>Starszy Rocznik</code></a></li>
+</ul>
+<p>Napisz metodę do tworzenia drzewa BST o możliwie najmniejszej wysokości na podstawie uporządkowanego rosnąco ciągu kluczy w tablicy, np: <code>{2, 4, 7, 12, 15, 20, 25}</code></p>
+<h3><a id="Zadanie_5_50"></a>Zadanie 5</h3>
+<ul>
+<li><a href="Kolos2_2017_zadanie5/Program.cs">Rozwiązanie by odisei369</a></li>
+</ul>
+<p>W algorytmie BFS kolejność przechodzenia wierzchołków wyznacza pewne drzewo (jakieś). Napisz metodę, która jako argumenty pobiera listową reprezetnację drzewa i wierzchołków, a zwraca listę krawędzi: pary (wierzchołek początkowy, wierzchołek końcowy) drzewa.<br>
+Dla grafu jak na rysunki i wierzchołka 1 zwraca <code>{(1,2), (2,5), (2,3), (3,4), (4,6)}</code></p>
+<pre><code>6
+  \
+    4 --- 5 
+    |     | \
+    |     |   1
+    |     | /
+    3 --- 2
+</code></pre>

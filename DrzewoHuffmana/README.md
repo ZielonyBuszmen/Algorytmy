@@ -1,8 +1,3 @@
-## [<< WSTECZ](../)
-
-___
-
-
 # Drzewo Huffmana - [>>ZOBACZ KOD<<](./Program.cs)
 
 ![foto drzewo huffmana](./images/drzewo-huffmana1.png)
