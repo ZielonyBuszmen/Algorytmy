@@ -1,7 +1,7 @@
 # Algorytmy
 Znajduje się tutaj dosyć spore repo z kodem i materiałami pomocnymi przy zaliczaniu przedmiotu **A**lgorytmy **i** **D**anych **S**truktury. Jest parę wybrakowanych *kodów*, z czasem te repozytorium stanie się trochę *deprecated*, więc aby przeciwdziałać wszechobecnej wzrastającej entropii zachęcam do aktualizacji tegoż kodu poprzez *Forkowanie* projektu i tworzenie *Pull requestów*.
 
-## **Teorya** - [>>KLIK<<](TEORYA.md)
+# **Teorya** - [>>KLIK<<](TEORYA.md)
 Teoria, tzn. krótkie notatki, screeny z prezentacji, są dostępne tutej: [>>KLIK<<](TEORYA.md)
 
 # **Kolos nr 1**
