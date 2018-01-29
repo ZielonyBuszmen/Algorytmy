@@ -15,6 +15,19 @@ Teoria, tzn. krótkie notatki, screeny z prezentacji, są dostępne tutej: [>>KL
 
 ______
 
+## Niezmienniki, O(n), złożoność algorytmów
+- [to do]()
+
+## Rekurencja, dziel i zwyciężaj
+- [to do]()
+
+## Sortowanie
+- [to do]()
+
+## Programowanie dynamiczne vs zachłanne
+- [to do]()
+
+______
 
 ## Lab 8 - Lista, Stos, Kolejka
 - [Stos (LIFO)](StosLIFO/Program.cs)
