@@ -1,14 +1,14 @@
 # Algorytmy
 Znajduje się tutaj dosyć spore repo z kodem i materiałami pomocnymi przy zaliczaniu przedmiotu **A**lgorytmy **i** **D**anych **S**truktury. Jest parę wybrakowanych *kodów*, z czasem te repozytorium stanie się trochę *deprecated*, więc aby przeciwdziałać wszechobecnej wzrastającej entropii zachęcam do aktualizacji tegoż kodu poprzez *Forkowanie* projektu i tworzenie *Pull requestów*.
 
-## **Teorya** - [>>KLIK<<](#)
-Teoria, tzn. krótkie notatki, screeny z prezentacji, są dostępne tutej: [>>KLIK<<](#)
+## **Teorya** - [>>KLIK<<](TEORYA.md)
+Teoria, tzn. krótkie notatki, screeny z prezentacji, są dostępne tutej: [>>KLIK<<](TEORYA.md)
 
-## **Kolos nr 1**
-- [Zadania przykładowe](#) *Do dokonczenia*
-- [Kolos właściwy (zima 2017/2018)](#) *Do dokonczenia*
+# **Kolos nr 1**
+- [Zadania przykładowe]() *Do dokonczenia*
+- [Kolos właściwy (zima 2017/2018)]() *Do dokonczenia*
 
-## **Kolos nr 2**
+# **Kolos nr 2**
 - [Zadania przykładowe](Kolos2_PrzykladoweZadania/)
 - [Kolos z poprzedniego roku (zima 2016/2017)](Kolos2_ZPoprzedniegoRoku/)
 - [Kolos właściwy (zima 2017/2018)](Kolos2_2018/)
@@ -16,16 +16,16 @@ Teoria, tzn. krótkie notatki, screeny z prezentacji, są dostępne tutej: [>>KL
 ______
 
 ## Niezmienniki, O(n), złożoność algorytmów
-- [to do](#)
+- [to do]()
 
 ## Rekurencja, dziel i zwyciężaj
-- [to do](#)
+- [to do]()
 
 ## Sortowanie
-- [to do](#)
+- [to do]()
 
 ## Programowanie dynamiczne vs zachłanne
-- [to do](#)
+- [to do]()
 
 ______
 
