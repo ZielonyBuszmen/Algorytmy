@@ -69,6 +69,7 @@ ______
 ### Rekurencja, dziel i zwyciężaj
 ### Programowanie dynamiczne vs zachłanne
 - *to do*
+
 ______
 
 # **Teoria**
