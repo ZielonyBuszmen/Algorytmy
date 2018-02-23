@@ -1,12 +1,8 @@
 # Algorytmy
-Znajduje się tutaj dosyć spore repo z kodem i materiałami pomocnymi przy zaliczaniu przedmiotu **A**lgorytmy **i** **D**anych **S**truktury. Jest parę wybrakowanych *kodów*, z czasem te repozytorium stanie się trochę *deprecated*, więc aby przeciwdziałać wszechobecnej wzrastającej entropii zachęcam do aktualizacji tegoż kodu poprzez *Forkowanie* projektu i tworzenie *Pull requestów*.
+Znajduje się tutaj dosyć spore repo z kodem i materiałami pomocnymi przy zaliczaniu przedmiotu **A**lgorytmy **i** **D**anych **S**truktury. Jest parę wybrakowanych *kodów*, z czasem te repozytorium stanie się trochę *deprecated*, więc aby przeciwdziałać wszechobecnej rosnącej entropii zachęcam do aktualizacji tegoż kodu poprzez *Forkowanie* projektu i tworzenie *Pull requestów*.
 
 # **Teorya** - [>>KLIK<<](TEORYA.md)
 Teoria, tzn. krótkie notatki, screeny z prezentacji, są dostępne tutej: [>>KLIK<<](TEORYA.md)
-
-# **Kolos nr 1**
-- [Zadania przykładowe]() *Do dokonczenia*
-- [Kolos właściwy (zima 2017/2018)]() *Do dokonczenia*
 
 # **Kolos nr 2**
 - [Zadania przykładowe](Kolos2_PrzykladoweZadania/)
@@ -14,7 +10,6 @@ Teoria, tzn. krótkie notatki, screeny z prezentacji, są dostępne tutej: [>>KL
 - [Kolos właściwy (zima 2017/2018)](Kolos2_2018/)
 
 ______
-
 
 ## Lab 8 - Lista, Stos, Kolejka
 - [Stos (LIFO)](StosLIFO/Program.cs)
@@ -60,7 +55,22 @@ ______
 - [Algorytm Dijkstry](AlgorytmDijkstry/Program.cs) - rozwiązanie Karwosia
 - *Do dokonczenia* [Algorytm Prima](#) - minimalne drzewo rozpinające
 
-____
+______
+
+## Sortowanie - *to do*
+- [MergeSort (sortowanie przez scalanie)](AlgorytmySortowania/MargeSort/Program.cs) 
+- [QuickSort (sortowanie szybkie)](AlgorytmySortowania/QuickSort/Program.cs) 
+- [Sortowanie przez wybieranie(selection sort)](AlgorytmySortowania/SortowaniePrzezWybieranie/Program.cs) 
+- [Sortowanie przez wstawianie](AlgorytmySortowania/SortowaniePrzezWstawianie/Program.cs) 
+- [BubbleSort (sortowanie bąbelkowe)](AlgorytmySortowania/BubbleSort/Program.cs) 
+- [Sortowanie przez zliczanie](AlgorytmySortowania/SortowaniePrzezZliczanie/Program.cs) 
+
+### Niezmienniki, O(n), złożoność algorytmów
+### Rekurencja, dziel i zwyciężaj
+### Programowanie dynamiczne vs zachłanne
+- *to do*
+
+______
 
 # **Teoria**
 Krótkie notatki są dostępne tutej: [>>KLIK<<](#)
